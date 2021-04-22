@@ -1,0 +1,94 @@
+@mixin uppercase{
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  font-weight: bold;
+}
+%text{
+  font-size: 0.7em;
+  color: $brand-color;
+font-family: $body;
+}
+%position{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@mixin font-size ($p1,$p2,$p3 ){
+font-size: $p1;
+  font-weight: $p2;
+  color: $p3;
+}
+%boards-theme{
+  width: 190px;
+  position: absolute;
+  height: 240px;
+  background-color: #ececec;
+  top: 80px;
+  left: -55px;
+  z-index: -1;
+}
+%first-boards__producer-place{
+  position: absolute;
+  top: 150px;
+  left: 110px;
+}
+%boards-producer__text{
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.55rem;
+  font-weight: 200;
+  color: #7a7a7a;
+}
+%boards-name__place{
+  position: absolute;
+  display: block;
+  top: 165px;
+  left: 110px;
+}
+%boards-name__text{
+  font-size: 1.075em;
+  font-weight: 400;
+  color: #333;
+  white-space: nowrap;
+}
+%boards__cost{
+  position: absolute;
+  top: 195px;
+  left: 145px;
+}
+%boards__price{
+  font-size: .8em;
+  font-weight: 300;
+  color: #ce60a8;
+}
+%boards__button-place{
+  position: absolute;
+  top: 215px;
+  left: 150px;
+}
+%boards__button-text{
+  @include uppercase;
+  @include font-size(.43em,bold,$heading-color);
+  letter-spacing: 0.4em;
+
+}
+%after-element{
+  content: "";
+  display: block;
+  background-color: $brand-color;
+  width: 86px;
+  height: 3px;
+  margin-top: 5px;
+}
+%paragraph-text{
+  font-size: 0.7em;
+  color: #5da8ef;
+  font-family: "Poppins", sans-serif;
+}
+%read-more{
+  text-transform: uppercase;
+  letter-spacing: 0.4em;
+  color: #333;
+  font-size: 0.6em;
+  font-weight: bold;
+}
