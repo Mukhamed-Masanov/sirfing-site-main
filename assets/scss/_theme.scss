@@ -128,20 +128,24 @@ img {
   z-index: 999;
 position: relative;
   .about__photos {
+    position: relative;
     .about__photo-man {
       z-index: -1;
     }
+.video {
+position: absolute;
+  top: 10%;
 
-    .about__video {
-z-index: 0;
+  .about__video {
+    z-index: 0;
 
-    }
-
+  }
+}
     .about__button {
       display: inline-block;
-      top: 185px;
-      left: 670px;
-      position: absolute;
+      //top: 185px;
+      //left: 670px;
+      //position: absolute;
     }
   }
 

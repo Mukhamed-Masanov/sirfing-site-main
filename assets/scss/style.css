@@ -377,17 +377,21 @@ img {
   z-index: 999;
   position: relative;
 }
+.about .about__photos {
+  position: relative;
+}
 .about .about__photos .about__photo-man {
   z-index: -1;
 }
-.about .about__photos .about__video {
+.about .about__photos .video {
+  position: absolute;
+  top: 10%;
+}
+.about .about__photos .video .about__video {
   z-index: 0;
 }
 .about .about__photos .about__button {
   display: inline-block;
-  top: 185px;
-  left: 670px;
-  position: absolute;
 }
 .about .about__text {
   position: absolute;
