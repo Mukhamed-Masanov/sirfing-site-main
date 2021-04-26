@@ -10,7 +10,9 @@ body {
   font: 1em $body;
 
 }
-
+.container{
+  height: auto;
+}
 h1, h2, h3, h4, h5, h6 {
   font-family: $headings;
   color: $heading-color;
@@ -126,34 +128,38 @@ img {
   margin: 100px 0 0 0;
   width: 100%;
   z-index: 999;
-position: relative;
+  position: relative;
+
   .about__photos {
     position: relative;
+
     .about__photo-man {
       z-index: -1;
     }
-.video {
-position: absolute;
-  top: 10%;
 
-  .about__video {
-    z-index: 0;
+    .video {
+      position: absolute;
+      top: 10%;
 
-  }
-}
+      .about__video {
+        z-index: 0;
+
+      }
+    }
+
     .about__button {
       display: inline-block;
-      //top: 185px;
-      //left: 670px;
-      //position: absolute;
+      position: absolute;
+      top: 72%;
+      left: 70%;
     }
   }
 
   .about__text {
     position: absolute;
-    width: 23%;
-    top: 270px;
-    left: 90px;
+    width: 28%;
+    top: 105%;
+    left: 8%;
 
     .about__par {
       @extend %text;
@@ -161,31 +167,35 @@ position: absolute;
     }
   }
 
+
   .about__read-more {
     position: absolute;
-    top: 370px;
-    left: 90px;
+    top: 140%;
+    left: 8%;
+
 
     &::after {
       content: "";
       display: block;
       background-color: $brand-color;
       width: 86px;
-      height: 3px;
+      height: 2px;
       margin-top: 5px;
+
+    }
+
+
+    .about__read {
+      @extend %read-more;
+      font-weight: 600;
 
     }
   }
 
-  .about__read {
-    @extend %read-more;
-    font-weight: bold;
-
-  }
 }
 
 .shop {
-  margin-top: 500px;
+  margin-top: 200px;
 
   .shop__text {
     .shop__title {
@@ -353,76 +363,134 @@ position: absolute;
     }
   }
 }
-.show-all{
+
+.show-all {
   text-align: center;
   margin-top: 35px;
   margin-bottom: 35px;
-  .show-all__text{
+
+  .show-all__text {
     @include uppercase;
     color: $heading-color;
     font-size: 0.6em;
-    &:after{
-     @extend %after-element;
-      width:80px ;
-      height:2px ;
+
+    &:after {
+      @extend %after-element;
+      width: 80px;
+      height: 2px;
       @include uppercase();
       margin: auto;
-margin-top: 5px;
+      margin-top: 5px;
     }
   }
 
 }
 
 
-.background{
+.background {
   position: absolute;
-  top:1290px;
+  top: 1285px;
   left: 0;
   background-image: url("../img/firstFhone.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   z-index: -1;
-  opacity: .1;
+  opacity: .050;
   min-height: 100%;
   min-width: 100%;
 }
 
-.surfing-training-block{
-margin-top: 50px;
+.surfing-training-block {
+  margin-top: 50px;
   position: relative;
-  .text-block--upper__title{
-    &-text{
-      white-space: nowrap;
-      &:after{
-        @extend %after-element;
-        width: 15px;
-        height: 2px;
+  //position: absolute;
 
+
+  .text-block--upper {
+    margin-top: 8em;
+    position: relative;
+    .text-block--upper__img{
+      z-index: -1;
+      width: 7em;
+      margin-left: -1em;
+      display:inline-block;
+      position: absolute;
+      bottom: 85%;
+      left: 4%;
+    }
+    .text-block--upper__title {
+      &-text {
+        white-space: nowrap;
+
+        &:after {
+          @extend %after-element;
+          width: 15px;
+          height: 2px;
+
+        }
       }
     }
-  }
-  .text-block--upper {
     .text-block--upper__par {
       margin-top: 15px;
+
       .text-block--upper__par-text {
         @extend %paragraph-text;
         color: #8f8f8f;
       }
     }
-    .text-block--upper__read-more{
+
+    .text-block--upper__read-more {
       margin-top: 35px;
-      .text-block--upper__read-more-text{
-@extend %read-more;
-        &:after{
+
+      .text-block--upper__read-more-text {
+        @extend %read-more;
+
+        &:after {
           @extend %after-element;
         }
       }
     }
   }
-
+    .picture--big {
+position: absolute;
+      .picture--big__text {
+        width: 45%;
+display: inline-block;
+        margin-left: 31.5%;
+        .picture--big__par {
+          @extend %paragraph-text;
+        }
+        .picture--big__read-more{
+          margin-top: 15%;
+          .picture--big__read-more-text{
+            @extend %read-more;
+            &:after{
+              @extend %after-element;
+            }
+          }
+        }
+      }
+    }
+.picture--small-row{
+  padding-top: 13%;
+  margin-left: 16%;
 
 }
+}
+//.fhone {
+//  position: absolute;
+//  top: 2000px;
+//  left: 0;
+//  background-image: url("../img/secondFhone.jpg");
+//  background-repeat: no-repeat;
+//  background-size: cover;
+//  background-position: center;
+//  z-index: -1;
+//  opacity: .050;
+//  min-height: 100%;
+//  min-width: 100%;
+//}
 
 
 

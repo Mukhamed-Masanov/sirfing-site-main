@@ -71,27 +71,27 @@
   letter-spacing: 0.4em;
 }
 
-.surfing-training-block .text-block--upper .text-block--upper__read-more .text-block--upper__read-more-text:after, .surfing-training-block .text-block--upper__title-text:after, .show-all .show-all__text:after {
+.surfing-training-block .picture--big .picture--big__text .picture--big__read-more .picture--big__read-more-text:after, .surfing-training-block .text-block--upper .text-block--upper__read-more .text-block--upper__read-more-text:after, .surfing-training-block .text-block--upper .text-block--upper__title-text:after, .show-all .show-all__text:after {
   content: "";
   display: block;
   background-color: #5da8ef;
   width: 86px;
-  height: 3px;
+  height: 2px;
   margin-top: 5px;
 }
 
-.surfing-training-block .text-block--upper .text-block--upper__par .text-block--upper__par-text {
+.surfing-training-block .picture--big .picture--big__text .picture--big__par, .surfing-training-block .text-block--upper .text-block--upper__par .text-block--upper__par-text {
   font-size: 0.7em;
   color: #5da8ef;
   font-family: "Poppins", sans-serif;
 }
 
-.surfing-training-block .text-block--upper .text-block--upper__read-more .text-block--upper__read-more-text, .about .about__read {
+.surfing-training-block .picture--big .picture--big__text .picture--big__read-more .picture--big__read-more-text, .surfing-training-block .text-block--upper .text-block--upper__read-more .text-block--upper__read-more-text, .about .about__read-more .about__read {
   text-transform: uppercase;
   letter-spacing: 0.4em;
   color: #333;
   font-size: 0.6em;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .left {
@@ -275,6 +275,10 @@ body {
   font: 1em "Poppins", sans-serif;
 }
 
+.container {
+  height: auto;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display", serif;
   color: #333;
@@ -392,32 +396,35 @@ img {
 }
 .about .about__photos .about__button {
   display: inline-block;
+  position: absolute;
+  top: 72%;
+  left: 70%;
 }
 .about .about__text {
   position: absolute;
-  width: 23%;
-  top: 270px;
-  left: 90px;
+  width: 28%;
+  top: 105%;
+  left: 8%;
 }
 .about .about__read-more {
   position: absolute;
-  top: 370px;
-  left: 90px;
+  top: 140%;
+  left: 8%;
 }
 .about .about__read-more::after {
   content: "";
   display: block;
   background-color: #5da8ef;
   width: 86px;
-  height: 3px;
+  height: 2px;
   margin-top: 5px;
 }
-.about .about__read {
-  font-weight: bold;
+.about .about__read-more .about__read {
+  font-weight: 600;
 }
 
 .shop {
-  margin-top: 500px;
+  margin-top: 200px;
 }
 .shop .shop__text .shop__title {
   text-align: center;
@@ -490,14 +497,14 @@ img {
 
 .background {
   position: absolute;
-  top: 1290px;
+  top: 1285px;
   left: 0;
   background-image: url("../img/firstFhone.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   z-index: -1;
-  opacity: 0.1;
+  opacity: 0.05;
   min-height: 100%;
   min-width: 100%;
 }
@@ -506,10 +513,23 @@ img {
   margin-top: 50px;
   position: relative;
 }
-.surfing-training-block .text-block--upper__title-text {
+.surfing-training-block .text-block--upper {
+  margin-top: 8em;
+  position: relative;
+}
+.surfing-training-block .text-block--upper .text-block--upper__img {
+  z-index: -1;
+  width: 7em;
+  margin-left: -1em;
+  display: inline-block;
+  position: absolute;
+  bottom: 85%;
+  left: 4%;
+}
+.surfing-training-block .text-block--upper .text-block--upper__title-text {
   white-space: nowrap;
 }
-.surfing-training-block .text-block--upper__title-text:after {
+.surfing-training-block .text-block--upper .text-block--upper__title-text:after {
   width: 15px;
   height: 2px;
 }
@@ -521,6 +541,21 @@ img {
 }
 .surfing-training-block .text-block--upper .text-block--upper__read-more {
   margin-top: 35px;
+}
+.surfing-training-block .picture--big {
+  position: absolute;
+}
+.surfing-training-block .picture--big .picture--big__text {
+  width: 45%;
+  display: inline-block;
+  margin-left: 31.5%;
+}
+.surfing-training-block .picture--big .picture--big__text .picture--big__read-more {
+  margin-top: 15%;
+}
+.surfing-training-block .picture--small-row {
+  padding-top: 13%;
+  margin-left: 16%;
 }
 
 /*# sourceMappingURL=style.css.map */
