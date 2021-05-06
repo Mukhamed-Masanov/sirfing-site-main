@@ -1,1 +1,63 @@
+@media screen and (min-width: 960px) {
 
+}
+
+@media only screen and (min-width: 720px) and (max-width: 959px) {
+
+  .hero {
+    margin-bottom: 70px;
+  }
+  .site-header {
+    padding: 50px 0;
+  }
+  .hero__text {
+    .info-block {
+      &__subtitle {
+        font-size: .5rem;
+      }
+
+      h1 {
+        font-size: 1.5em;
+
+      }
+    }
+  }
+  .quote {
+    &:after {
+      height: 70px;
+    }
+  }
+
+  .about {
+    margin: 50px 0 0 0;
+
+    .about__read-more {
+      display: block;
+      text-align: center;
+      top: 150%;
+
+      &:after {
+        width: 75px;
+        margin: 3px 0 0 0;
+      }
+
+      .about__read {
+        font-size: .5em;
+
+      }
+    }
+  }
+  .shop {
+    margin: 120px 0 0 0;
+
+    .boards {
+      .first-board {
+        &__theme {
+@include boards__theme;
+        }
+      }
+    }
+  }
+
+
+}

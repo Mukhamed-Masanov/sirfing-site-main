@@ -27,6 +27,10 @@ font-size: $p1;
   left: -55px;
   z-index: -1;
 }
+@mixin boards__theme{
+
+  width: 140px;
+}
 %first-boards__producer-place{
   position: absolute;
   top: 150px;
